@@ -6,5 +6,5 @@ Docker build here: https://hub.docker.com/repository/docker/chardskarth/java-gra
 Docker image base: [openjdk-8](https://hub.docker.com/_/openjdk)
 
 Gradle: 4.6  
-Node: 12.18.3
-Yarn: 1.22.4
+Node: 12.18.3  
+Yarn: 1.22.4  

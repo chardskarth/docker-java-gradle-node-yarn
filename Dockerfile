@@ -1,4 +1,4 @@
-FROM openjdk:8
+FROM openjdk:11
 MAINTAINER Richard Glen Domingo
 
 RUN apt-get update
@@ -6,7 +6,7 @@ RUN apt-get -y install wget curl unzip xz-utils python build-essential ssh git l
 
 ENV YARN_VERSION 1.22.4
 ENV NODE_VERSION 12.18.3
-ENV GRADLE_VERSION 4.6
+ENV GRADLE_VERSION 6.7.1
 
 # Configure locale to UTF-8
 RUN locale-gen en_US.UTF-8

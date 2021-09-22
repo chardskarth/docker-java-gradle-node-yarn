@@ -2,11 +2,12 @@ FROM openjdk:11
 MAINTAINER Richard Glen Domingo
 
 RUN apt-get update
-RUN apt-get -y install wget curl unzip xz-utils python build-essential ssh git locales
+RUN apt-get -y install wget curl unzip xz-utils python build-essential ssh git locales openssh-client
 
 ENV YARN_VERSION 1.22.4
 ENV NODE_VERSION 12.18.3
 ENV GRADLE_VERSION 6.7.1
+ENV ESLINT_VERSION 7.32.0
 
 # Configure locale to UTF-8
 RUN locale-gen en_US.UTF-8
@@ -28,4 +29,5 @@ RUN wget https://services.gradle.org/distributions/gradle-$GRADLE_VERSION-bin.zi
     rm -f gradle-$GRADLE_VERSION-bin.zip
 
 RUN npm i --global yarn@$YARN_VERSION
+RUN npm i --global eslint@$ESLINT_VERSION
 

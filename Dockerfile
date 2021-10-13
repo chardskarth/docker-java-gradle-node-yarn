@@ -5,8 +5,8 @@ RUN apt-get update
 RUN apt-get -y install wget curl unzip xz-utils python build-essential ssh git locales openssh-client
 
 ENV YARN_VERSION 1.22.4
-ENV NODE_VERSION 12.18.3
-ENV GRADLE_VERSION 6.7.1
+ENV NODE_VERSION 12.22.6
+ENV GRADLE_VERSION 7.2
 ENV ESLINT_VERSION 7.32.0
 
 # Configure locale to UTF-8
